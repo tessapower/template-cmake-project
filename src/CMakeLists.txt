@@ -1,4 +1,15 @@
-set(MYLIB_HEADERS "${template_cmake_project_SOURCE_DIR}/include/myLib/myLib.h")
-add_library(myLib STATIC myLib/myLib.cpp ${MYLIB_HEADERS})
-target_include_directories(myLib PUBLIC ../include)
-target_include_directories(myLib PRIVATE ../include/myLib)
+set(MY_LIB_HEADERS
+        "${template_cmake_project_SOURCE_DIR}/include/my_lib/my_lib.h"
+        # Add other library headers here
+        )
+
+add_library(my_lib STATIC
+        my_lib/my_lib.cpp
+        # Add other source files here
+        ${MY_LIB_HEADERS}
+        )
+
+# Support <my_lib/my_lib.h> imports in public headers
+target_include_directories(my_lib PUBLIC ../include)
+# Support "my_lib.h" imports in private headers and source files
+target_include_directories(my_lib PRIVATE ../include/my_lib)
