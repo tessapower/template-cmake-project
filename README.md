@@ -38,8 +38,8 @@ these subdirectories as part of the project.
 The structure and layout was derived from 
 "[An Introduction to Modern CMake](https://cliutils.gitlab.io/modern-cmake/)".
 
-- CMake Version: `3.20`
-- C++ Standard:  `C++17`
+- CMake Version: `3.25`
+- C++ Standard:  `C++20`
 - Testing Framework: `GoogleTest`
 
 ### Build Configurations
