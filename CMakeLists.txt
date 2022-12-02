@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.16)
-project(template_cmake_project VERSION 0.0.1)
+cmake_minimum_required(VERSION 3.25)
+project(template_cmake_project VERSION 0.0.2)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 
 include(FetchContent)
 
